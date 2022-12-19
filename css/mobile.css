@@ -49,3 +49,14 @@
         padding: 15px 40px !important;
     }
 }
+
+@media (max-width: 360px) {
+    .sign-up .btn-2 {
+        font-size: 13px !important;
+        padding: 15px 15px !important;
+    }
+
+    .main-text p {
+        font-size: 12px !important;
+    }
+}
