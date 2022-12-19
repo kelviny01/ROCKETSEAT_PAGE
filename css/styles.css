@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/hero-background.webp);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-position-y: 70px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    width: 100%;
+    background-color: #121212;
+    padding: 0 7%;
+}
+
+.content nav ul {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.content nav ul li a {
+    color: #9b9386;
+    padding: 32px 0;
+    transition: 0.4s ease-in all;
+}
+
+.content nav ul li a:hover {
+    border-bottom: 2px solid #8257E6;
+    border-left: 2px solid #fff;
+}
+
+.content .sign-up {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.content .sign-up a {
+    color: #f9f9f9;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.content .sign-up a:hover:last-child {
+    background-color: #8257E6;
+}
+
+.content .sign-up a:last-child {
+    border: 1px solid #8257E6;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #8257E6;
+    padding: 1em 1.5em;
+}
+
+.content .sign-up i {
+    color: #8257E6;
+    padding: 0.6rem
+}
+
+.infos-center {
+    width: 100%;
+    height: calc(100vh - 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.infos-center .text-infos .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+}
+
+.infos-center .text-infos .logo p {
+    color: #39fb90;
+}
+
+.infos-center .text-infos .main-text h1 {
+    color: #f9f9f9;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.infos-center .text-infos .main-text p {
+    color: #f9f9f9;
+    font-size: 16px;
+    margin-top: 1em;
+    line-height: 26px;
+    margin-bottom: 2.5em;
+}
+
+.infos-center .text-infos .main-text a {
+    background-color: #8257E6;
+    color: #f9f9f9;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 70px;
+    border-radius: 5px;
+}
+
+.infos-center .text-infos .main-text a:hover {
+    opacity: 0.8;
+}
+
+.text-infos .logo img {
+    animation: bye .3s ease-in alternate infinite;
+}
+
+@keyframes bye {
+    from {
+        transform: translateX(-1px);
+    }
+
+    to {
+        transform: translateX(1px);
+    }
+}
